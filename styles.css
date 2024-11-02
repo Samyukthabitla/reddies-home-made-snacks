@@ -1,0 +1,103 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/sweets.jpeg'); /* Add your background image here */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: #333;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  background-color: rgba(255, 204, 102, 0.8); /* Semi-transparent for readability */
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #b35900;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Products Section */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h2 {
+  color: #b35900;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #ff9933;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff6600;
+}
+
+/* Description Section */
+.description {
+  margin: 20px 0;
+  color: black; /* Change this to your desired color */
+  font-size: 1.2em; /* Adjust the font size if needed */
+}
+
+/* Contact Section */
+.contact {
+  background-color: #ffcc66;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact h2 {
+  color: #b35900;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1.2em;
+}

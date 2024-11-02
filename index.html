@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddies Home Made Snacks</title>
+  
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Reddies Home Made Snacks" />
+  <meta property="og:description" content="Order your favorite Appalu, Sweets, and more!" />
+  <meta property="og:image" content="https://example.com/path/to/image.jpg" /> <!-- Replace with a valid image URL -->
+  <meta property="og:url" content="https://example.com" /> <!-- Replace with your page URL -->
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Reddies Home Made Snacks</h1>
+    <p>Order your favorite - Appalu, Sweets, and more!</p>
+  </header>
+
+  <!-- Product Section -->
+  <section class="products">
+    <div class="product">
+      <img src="images/Murukulu-Telangana-Style-1.webp" alt="Appalu">
+      <h2>Appalu</h2>
+      <p>Crispy and delicious traditional Indian Snacks.</p>
+      <button>Order Now</button>
+    </div>
+    <div class="product">
+      <img src="images/sweets.jpeg" alt="Sweets">
+      <h2>Sweets</h2>
+      <p>Delightful assorted sweets made with love.</p>
+      <button>Order Now</button>
+    </div>
+  </section>
+
+  <!-- Additional Paragraph Section -->
+  <section class="description">
+    <p>At Reddies Home Made Snacks, we believe in offering treats that are both healthy and tasty. Our Appalu and assorted sweets are crafted from wholesome ingredients, making them a delightful choice for any occasion.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Address: Village: Siddenki, Jangaon</p>
+    <p>Phone: 9666087211, 9704056086, 9515532498, 9502366040</p>
+  </section>
+
+  <!-- Share Page Button -->
+  <button onclick="sharePage()">Share This Page</button>
+  <button onclick="copyLink()">Copy Link</button>
+
+  <script>
+    function sharePage() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Reddies Home Made Snacks',
+          text: 'Check out Reddies Home Made Snacks for delicious Appalu and sweets!',
+          url: window.location.href
+        }).then(() => {
+          console.log('Share successful');
+        }).catch((error) => {
+          console.error('Error sharing:', error);
+        });
+      } else {
+        alert('Sharing not supported on this browser. You can copy this link: ' + window.location.href);
+      }
+    }
+
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        alert('Link copied to clipboard! You can now paste it in WhatsApp.');
+      }).catch(err => {
+        console.error('Could not copy link: ', err);
+      });
+    }
+  </script>
+
+</body>
+</html>
